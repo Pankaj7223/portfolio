@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pankaj Kushwah - AI & Data Science Enthusiast | 4th Year CSE Student specializing in Machine Learning, Deep Learning, and Full-Stack Development">
+    <meta name="keywords" content="Pankaj Kushwah, AI, Data Science, Machine Learning, Python, Flask, Computer Science, Portfolio, Developer, Student">
+    <meta name="author" content="Pankaj Kushwah">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pankaj Kushwah - AI & Data Science Portfolio">
+    <meta property="og:description" content="4th Year CSE Student specializing in AI, ML, and Full-Stack Development. Explore my projects and skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pankaj-kushwah-portfolio.netlify.app">
+    <meta property="og:image" content="images/pankaj2.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pankaj Kushwah - AI & Data Science Portfolio">
+    <meta name="twitter:description" content="4th Year CSE Student specializing in AI, ML, and Full-Stack Development">
+    <meta name="twitter:image" content="images/pankaj2.jpg">
+    
+    <title>Pankaj Kushwah - AI & Data Science Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loading">
+        <div class="loading-content">
+            <div class="loading-circle"></div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <div class="scroll-up-btn" id="scrollUp">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">PK<span class="logo-dot">.</span></a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#stats" class="nav-link">Stats</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-text">
+                <div class="greeting">👋 Hi, I'm</div>
+                <h1 class="hero-name">Pankaj Kushwah</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                </div>
+                <p class="hero-description">
+                    I'm passionate about solving real-world problems using machine learning, 
+                    data analytics, and intelligent automation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="images/Pankaj_Kushwah_Resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <div class="image-container">
+                    <img src="images/pankaj.jpg" alt="Pankaj Kushwah" class="profile-img" loading="eager">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">👨‍💻 About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="images/pankaj2.jpg" alt="Pankaj Kushwah" class="about-img" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>I'm a <span class="highlight">4th-year Computer Science </span> with specializing in Artificial Intelligence and Data Science.</h3>
+                    <p>
+                        I love transforming complex data into meaningful insights and building systems that think, learn, and evolve.
+                        I'm currently exploring face recognition, Flask web development, and intelligent automation.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>SISTec GN, Bhopal (2022-2026)</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Bhopal, Madhya Pradesh, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>Specialization</strong>
+                                <span>AI & Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fun-fact">
+                        <i class="fas fa-lightbulb"></i>
+                        <span><strong>Fun Fact:</strong> When not coding, I explore UI design and experiment with new tech ideas.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">🚀 Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions built with cutting-edge technology</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image-container">
+                        <img src="images/profile-2.jpeg" alt="Group Face Recognition Attendance System" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="project-btn demo-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-btn github-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Group Face Recognition System</h3>
+                            <div class="project-category">AI & Computer Vision</div>
+                        </div>
+                        <p class="project-description">
+                            Advanced AI system that detects and recognizes multiple faces simultaneously for automated attendance tracking with real-time processing capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag python"><i class="fab fa-python"></i>Flask</span>
+                            <span class="tech-tag ai"><i class="fas fa-brain"></i>OpenCV</span>
+                            <span class="tech-tag ai"><i class="fas fa-eye"></i>InsightFace</span>
+                            <span class="tech-tag database"><i class="fas fa-database"></i>PostgreSQL</span>
+                            <span class="tech-tag data"><i class="fas fa-chart-line"></i>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image-container">
+                        <img src="images/profile-3.jpeg" alt="Loan Eligibility Prediction System" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="project-btn demo-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Pankaj7223/Loan_Eligibility_prediction" class="project-btn github-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Loan Eligibility Prediction</h3>
+                            <div class="project-category">Machine Learning & FinTech</div>
+                        </div>
+                        <p class="project-description">
+                            Intelligent ML system that analyzes financial and demographic data to predict loan approval with high accuracy and real-time decision making.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag python"><i class="fab fa-python"></i>Python</span>
+                            <span class="tech-tag web"><i class="fas fa-globe"></i>Flask</span>
+                            <span class="tech-tag ml"><i class="fas fa-robot"></i>Scikit-learn</span>
+                            <span class="tech-tag data"><i class="fas fa-chart-bar"></i>Pandas</span>
+                            <span class="tech-tag frontend"><i class="fas fa-code"></i>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image-container">
+                        <img src="images/ESP32_COORDINATOR.jpg" alt="Multiple Disease Prediction" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="project-btn demo-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Pankaj7223/Multiple_Disease_prediction-" class="project-btn github-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Multiple Disease Prediction</h3>
+                            <div class="project-category">Healthcare AI & ML</div>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive healthcare AI platform that predicts multiple diseases including Diabetes, Heart Disease, and Parkinson's using advanced ML algorithms.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag python"><i class="fab fa-python"></i>Python</span>
+                            <span class="tech-tag web"><i class="fas fa-stream"></i>Streamlit</span>
+                            <span class="tech-tag ml"><i class="fas fa-brain"></i>Scikit-learn</span>
+                            <span class="tech-tag data"><i class="fas fa-chart-line"></i>Pandas</span>
+                            <span class="tech-tag math"><i class="fas fa-calculator"></i>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image-container">
+                        <img src="images/profile-3.jpeg" alt="LIC Agent Portfolio Website" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="project-btn demo-btn" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/Pankaj7223/rckushwah" class="project-btn github-btn" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">LIC Agent Portfolio</h3>
+                            <div class="project-category">Business & Web Development</div>
+                        </div>
+                        <p class="project-description">
+                            Professional business website for LIC agents featuring admin dashboard, WhatsApp integration, and comprehensive SEO optimization for maximum reach.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag web"><i class="fas fa-flask"></i>Flask</span>
+                            <span class="tech-tag frontend"><i class="fas fa-code"></i>HTML/CSS</span>
+                            <span class="tech-tag frontend"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="tech-tag ui"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+                            <span class="tech-tag data"><i class="fas fa-file-code"></i>JSON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">⚙️ My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Flask</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Django</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Core Concepts</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">DSA</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OS</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OOP</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DBMS</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI/ML</span>
+                            <div class="skill-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">📊 My Journey in Numbers</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">ML Models Deployed</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Hours of Learning</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">🏆 Achievements & Certifications</h2>
+                <p class="section-subtitle">Milestones in my learning journey</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Academic Excellence</h3>
+                        <p class="achievement-description">Maintaining consistent academic performance in Computer Science Engineering with specialization in AI & Data Science</p>
+                        <div class="achievement-year">2022-2026</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Python Programming</h3>
+                        <p class="achievement-description">Advanced proficiency in Python for data science, machine learning, and web development applications</p>
+                        <div class="achievement-year">2023</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Machine Learning Projects</h3>
+                        <p class="achievement-description">Successfully developed and deployed multiple ML models including disease prediction and loan eligibility systems</p>
+                        <div class="achievement-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="achievement-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Computer Vision</h3>
+                        <p class="achievement-description">Expertise in face recognition and image processing using OpenCV and advanced deep learning techniques</p>
+                        <div class="achievement-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Full-Stack Development</h3>
+                        <p class="achievement-description">Proficient in building end-to-end web applications using Flask, HTML/CSS, JavaScript, and database management</p>
+                        <div class="achievement-year">2023-2024</div>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="achievement-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Database Management</h3>
+                        <p class="achievement-description">Advanced skills in PostgreSQL, MySQL, and database optimization for large-scale applications</p>
+                        <div class="achievement-year">2023-2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">📬 Let's Build Something Great Together 💡</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>pankajkushwahabhisek@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7223017603</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bhopal, Madhya Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Pankaj7223" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/pankaj-kushwah-515b99285" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:pankajkushwahabhisek@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="glassmorphism-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini AI Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h4>Ask me about my projects! 🤖</h4>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="bot-message">
+                Hi there! I'm Pankaj's virtual assistant. Ask me anything about his projects or skills!
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="Type your message...">
+            <button id="chatbotSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
